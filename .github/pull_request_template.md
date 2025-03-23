@@ -1,10 +1,7 @@
-# Part _ done ! 🚀 
-<!-- replace the underscore with the number of the part completed -->
-
-## 📚 Context
+## 📚 Summary
 <!-- Add a brief context of what was done in this PR -->
 Added part0 exercises
 
-## 📝 Changes
+## 📝 Exercises
 <!-- Add the exercises done in this PR -->
-- 
+- [ ] 
