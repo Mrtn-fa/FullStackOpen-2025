@@ -8,13 +8,20 @@ const nameFilter = (substring) => {
     }
 }
 
-const filterByName = (arr, name) => {
-    const filteredArr = arr.filter(nameFilter(name));
-    return filteredArr.map((person) => <div key={person.name}>{person.name} {person.number}</div>);
+const Person = ({ data, handleDelete }) => {
+    const { id, name, number } = data;
+    return (
+        <div>
+            {name} {number} <button onClick={handleDelete(id, name)}>delete</button>
+        </div>
+    )
 }
 
-const Persons = ({ persons, filter }) => {
-    return filterByName(persons, filter)
+const Persons = ({ persons, searchName, handleDelete }) => {
+    const filteredPersons = persons.filter(nameFilter(searchName));
+    return filteredPersons.map((person) => (
+        <Person key={person.id} data={person} handleDelete={handleDelete} />
+    ))
 }
 
 export default Persons
