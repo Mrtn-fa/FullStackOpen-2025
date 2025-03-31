@@ -1,10 +1,12 @@
-DELETE http://localhost:3001/api/persons/1
-
-###
+### GET ALL
 GET http://localhost:3001/api/persons
 Content-Type: application/json
 
-###
+### GET ID
+GET http://localhost:3001/api/persons/67e8bec4071959d8f50dbf82
+Content-Type: application/json
+
+### POST
 POST http://localhost:3001/api/persons
 Content-Type: application/json
 
@@ -12,3 +14,6 @@ Content-Type: application/json
     "name": "POST NAME",
     "number": "123"
 }
+
+### DELETE ID
+DELETE http://localhost:3001/api/persons/67e9aaf20ec09fba96f41191
