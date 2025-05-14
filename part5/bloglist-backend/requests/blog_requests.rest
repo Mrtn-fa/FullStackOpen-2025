@@ -1,0 +1,19 @@
+### GET ALL
+GET http://localhost:3001/api/blogs
+Content-Type: application/json
+
+### POST BLOG
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWQiOiI2N2VmNWI2M2Q4NWZmYTg2ZTBjNjM0MGIiLCJpYXQiOjE3NDM3NDAwMjV9.3bFDuKjvtpVva4wM3u5nJ1gidujMvKTUZdHgn9zbRqg
+
+{
+  "title": "BLOG TITLE 1",
+  "author": "Mrtn-fa",
+  "url": "https://example.com",
+  "likes": 0
+}
+
+### DELETE BLOG
+DELETE http://localhost:3001/api/blogs/67ef59b5c6a39cfa66acaec5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWQiOiI2N2VmNWI2M2Q4NWZmYTg2ZTBjNjM0MGIiLCJpYXQiOjE3NDM3NDAwMjV9.3bFDuKjvtpVva4wM3u5nJ1gidujMvKTUZdHgn9zbRqg
