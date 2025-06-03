@@ -1,0 +1,29 @@
+### Get all users
+GET http://localhost:3001/api/users
+Content-Type: application/json
+
+### Register user
+POST http://localhost:3001/api/users/
+Content-Type: application/json
+
+{
+  "name": "user1",
+  "username": "user1",
+  "password": "password"
+}
+
+
+### Login
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "password"
+}
+
+// ROOT
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY3ZWY1NjY5MTNmZWZmM2EyNzY4Mzg0ZCIsImlhdCI6MTc0MzczODc0OH0.ybboyelkepYro40lnNa1bI3hhT3uz1i4RtCZKKqQWfo
+
+// USER1
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWQiOiI2N2VmNWI2M2Q4NWZmYTg2ZTBjNjM0MGIiLCJpYXQiOjE3NDM3NDAwMjV9.3bFDuKjvtpVva4wM3u5nJ1gidujMvKTUZdHgn9zbRqg
